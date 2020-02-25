@@ -37,11 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    #3rd party apps:
+    'crispy_forms',
+    #our apps:
 
     'profiles',
     'reports',
     'areas',
     'products',
+    'categories',
 ]
 
 MIDDLEWARE = [
@@ -117,6 +122,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
 # Static files (CSS, JavaScript, Images)
